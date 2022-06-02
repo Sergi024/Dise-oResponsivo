@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container{
     height: 100vh;
     margin-left: 5%;
@@ -13,17 +12,22 @@
     text-align: center;
     gap: 10px;
 }
+
+
+
 header{
-    background-color: rgb(95, 207, 241);
-    border: solid 1px black;
+    height: 10vh;
     grid-column: 1/5;
+    border: solid 1px black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
 }
 .titles-header{
-    grid-row: 1/1;
+    text-align: start;
+    border: solid 1px black;
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
 .header-seccion1{
     border: solid 1px black;
@@ -40,68 +44,98 @@ header{
     grid-column: 4/5;
     grid-row: 2/5;
 }
+
+
+
 .container-hero{
-    background-color: rgb(95, 207, 241);
     border: solid 1px black;
+    height: 15vh;
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 15vh;
-    gap: 20px;
+    grid-template-rows: repeat(4,1fr);
+}
+.title-hero{
+    border: solid 1px black;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: start;
 }
 .hero-seccion1{
     border: solid 1px black;
     grid-column: 1/4;
-    height: 100%;
-
+    grid-row: 2/5;
 }
 .hero-seccion2{
     border: solid 1px black;
     grid-column: 4/5;
+    grid-row: 2/5;
 }
+
+
+
 .container-img{
-    background-color: rgb(95, 207, 241);
     border: solid 1px black;
     grid-column: 4/5;
     height: 15vh;
 }
 img{
     border: solid 1px black;
-
 }
+
+
+
 .container-main{
-    background-color: rgb(95, 207, 241);
     border: solid 1px black;
+    height: 65vh;
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 65vh;
-    
+    grid-template-rows: repeat(20,1fr);
+}
+.title-main{
+    border: solid 1px black;
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
 .main-seccion1{
     border: solid 1px black;
     grid-column: 1/2;
+    grid-row: 2/21;
 }
 .main-seccion2{
     border: solid 1px black;
     grid-column: 2/5;
+    grid-row: 2/21;
 }
+
+
+
 .container-sidebar{
-    background-color: rgb(95, 207, 241);
     border: solid 1px black;
+    height: 65vh;
     grid-column: 4/5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 65vh;
+    grid-template-rows: repeat(20, 1fr);
+}
+.title-sidebar{
+    border: solid 1px black;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: start;
 }
 aside{
-    grid-column: 1/5;
     border: solid 1px black;
-
+    grid-column: 1/5;
+    grid-row: 2/21;
 }
 
+
+
+
 footer{
-    background-color: rgb(95, 207, 241);
     border: solid 1px black;
+    height: 5vh;
     grid-column: 1/5;
 }
